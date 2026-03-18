@@ -105,3 +105,39 @@ while True:
 # ASCII Value
 a='g'
 print(ord(a))
+
+# 9Q. Sum of list
+a=list(map(int, input().split(",")))
+b=0
+for i in a[0:]:# else for i in a:
+    b+=i
+print(b)#just sum(a)  will find sum
+
+# 10Q. max in list
+a=list(map(int,input().split(" ")))
+b=a[0]
+for i in a:
+    if  i>b:
+        b=i
+print(b)
+
+# 11Q. Rotate the list
+a=list(map(int,input().split(",")))
+r=3
+b=a[r:]+a[0:r]
+print(b)
+
+# 12Q. Split the Array and Add First Part to the End
+a=list(map(int,input().split(",")))
+k=2
+b=a[k:]
+c=b+a[0:k]
+print(c)
+# 13Q. reminder of array multiplication divided by n
+a=[2,4,5,6]
+b=1
+n=7
+for i in a:
+    b=b*i
+d=b% n
+print(d)   
