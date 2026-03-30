@@ -141,3 +141,67 @@ for i in a:
     b=b*i
 d=b% n
 print(d)   
+
+# 13Q. sum of even and odd digits
+a=232211
+b=str(a)
+c=0
+d=0
+for i in b:
+    if int(i)%2==0:
+        c+=int(i)
+    else:
+        d+=int(i)
+
+print(c,d)
+
+# 14.Q reverse number
+a=1239876
+b=str(a)
+c=b[::-1]
+print(int(c))
+
+14Q. perfect number 
+
+a=280
+b=0
+for i in range(1,a):
+    if a % i==0:
+        b=b+i
+if a==b:
+    print("perfect")
+else:
+    print("not")
+
+# Q15. move 0s  to last
+a=[12,0,8,9,0,6,8]
+b=[]
+c=[]
+for i in a:
+    if i==0:
+        b.append(i)
+    else:
+        c.append(i)
+d=b+c
+print(d)
+
+
+# Q.16 frequency of number
+a=[12,0,8,9,0,6,8]
+f={}
+for i in a:
+    if i in f:
+        f[i]+=1
+    else:
+        f[i]=1
+print(f)  
+
+# Q.17 anagram
+a="sanjay"
+b="yajnaS"
+a=a.lower()
+b=b.lower()
+if sorted(a)==sorted(b):
+    print("anagram")
+else:
+    print("not")
